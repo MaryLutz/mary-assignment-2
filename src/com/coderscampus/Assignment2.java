@@ -15,19 +15,15 @@ public class Assignment2 {
 
 		int i = 1;
 		while (i <= 5){
-		int guessNumber = scanner.nextInt();
 				
+			int guessNumber = scanner.nextInt();
 		if (guessNumber == randomNumber) {
 			System.out.println("You win!");
 			return;
-		}
-		 
-		else if (guessNumber < randomNumber){
+		}else if (guessNumber < randomNumber){
 			System.out.println("Please pick a higher number.");	
 			 i++;
-		} 
-		
-		else if(guessNumber > randomNumber){
+		} else if(guessNumber > randomNumber){
 			System.out.println("Please pick a lower number.");
 			 i++;
 		}
