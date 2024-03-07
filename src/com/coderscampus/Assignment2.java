@@ -9,33 +9,29 @@ public class Assignment2 {
 		Random random = new Random();
 		int randomNumber = random.nextInt(101);
 		System.out.println("Random number is " + randomNumber);
-		
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Pick a number between 1 nad 100.");
 
+		System.out.println("Pick a number between 1 nad 100.");
+		int a = 100;
 		int i = 1;
-		while (i <= 5){
-				
+		while (i <= 5) {
+
+			Scanner scanner = new Scanner(System.in);
 			int guessNumber = scanner.nextInt();
-		if (guessNumber == randomNumber) {
-			System.out.println("You win!");
-			return;
-		}else if (guessNumber < randomNumber){
-			System.out.println("Please pick a higher number.");	
-			 i++;
-		} else if(guessNumber > randomNumber){
-			System.out.println("Please pick a lower number.");
-			 i++;
+			if (guessNumber > a) {
+				System.out.println("Pick a number between 1 and 100.");
+			} else if (guessNumber == randomNumber) {
+				System.out.println("You win!");
+				return;
+			} else if (guessNumber < randomNumber) {
+				System.out.println("Please pick a higher number.");
+				i++;
+			} else if (guessNumber > randomNumber) {
+				System.out.println("Please pick a lower number.");
+				i++;
+			}
+
 		}
-		
-	}
 		System.out.println("You lose!");
-		
+
 	}
 }
-		
-			
-		
-
-
-
