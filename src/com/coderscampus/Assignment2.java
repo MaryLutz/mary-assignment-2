@@ -12,7 +12,7 @@ public class Assignment2 {
 		System.out.println("Random number is " + randomNumber);
 
 		System.out.println("Pick a number between 1 nad 100.");
-		
+
 		int i = 1;
 		while (i <= 5) {
 
@@ -20,8 +20,6 @@ public class Assignment2 {
 			int guessNumber = scanner.nextInt();
 			if (guessNumber > 100 || guessNumber == 0) {
 				System.out.println("Pick a number between 1 and 100.");
-//			} else if (guessNumber ) {
-//				System.out.println("Pick a number between 1 and 100.");
 			} else if (guessNumber == randomNumber) {
 				System.out.println("You win!");
 				scanner.close();
